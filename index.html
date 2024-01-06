@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Random password generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Generate a <br /><span class="span">Random Password</span></h1>
+      <div class="display">
+        <input type="text" id="password" placeholder="Password" />
+
+        <img class="copyIcon" src="./img/copy.png" alt="PNG"/>
+      </div>
+
+      <input
+        type="range"
+        min="1"
+        max="20"
+        value="4"
+        class="input-range"
+        id="inputSlider"
+      />
+      <div class="row-length">
+        <p>Password Length</p>
+        <span id="sliderValue"></span>
+      </div>
+
+      <div class="row">
+        <label for="lowercase">Include Lowercase Letters (a-z)</label>
+        <input type="checkbox" id="lowercase" name="lowercase" checked/>
+      </div>
+      <div class="row">
+        <label for="uppercase">Include Uppercase Letters (A-Z)</label>
+        <input type="checkbox" id="uppercase" name="uppercase" checked />
+      </div>
+      <div class="row">
+        <label for="number">Include Numbers (0-9)</label>
+        <input type="checkbox" id="number" name="number" checked />
+      </div>
+      <div class="row">
+        <label for="symbols">Include Symbols (@-*)</label>
+        <input type="checkbox" id="symbols" name="symbols" checked/>
+      </div>
+      <div class="footer">
+        <button>
+          <img src="./img/generate.png" alt="thunder" /> Generate Password
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
